@@ -1,0 +1,23 @@
+﻿<Page x:Class="ChestionarApp.Page1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ChestionarApp"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="800"
+      Title="Page1">
+    <Canvas Background="White">
+        <!--= Nume -->
+        <TextBlock Padding="5" FontWeight="Bold" Text="Name:" Canvas.Left="150" Canvas.Top="40"/>
+        <TextBox x:Name="Name"  Padding="5" Canvas.Left="230" Canvas.Top="40" Width="100" Height="30"/>
+        <!--=Nivel-->
+        <TextBlock Padding="5" Grid.Column="0" FontWeight="Bold" Text="Nivel" Canvas.Left="150" Canvas.Top="160"/>
+        <RadioButton x:Name="rb1" Canvas.Left="300" Canvas.Top="100" GroupName="nivel" Content="Usor" Checked = "HandleCheck"/>
+        <RadioButton x:Name="rb2" Canvas.Left="300" Canvas.Top="140" GroupName="nivel" Content="Mediu" Checked = "HandleCheck"/>
+        <RadioButton x:Name="rb3" Canvas.Left="300" Canvas.Top="180" GroupName="nivel" Content="Avansat" Checked = "HandleCheck"/>
+        <RadioButton x:Name="rb4" Canvas.Left="300" Canvas.Top="220" GroupName="nivel" Content="Expert" Checked = "HandleCheck"/>
+        <!--Start test-->
+        <Button x:Name="startButton" Click="startButton_Click" Grid.Column="1" Content="Incepe testul" Canvas.Bottom="10" Canvas.Right="10"/>
+    </Canvas>
+</Page>
